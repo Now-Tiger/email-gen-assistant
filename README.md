@@ -110,10 +110,10 @@ Open [http://localhost:8000](http://localhost:8000) in your browser.
 
 **Login credentials** (set in `.env`, change anytime):
 
-| Field    | Default  |
-|----------|----------|
-| Username | `admin`  |
-| Password | `admin`  |
+| Field    | Default |
+| -------- | ------- |
+| Username | `admin` |
+| Password | `admin` |
 
 > **Note:** The app does not have a sign-up flow. Only the user configured in `.env` can log in.
 
@@ -128,6 +128,7 @@ uv run chainlit run app.py
 ```
 
 The assistant walks you through five steps:
+
 1. Describe what email you need to write
 2. Add key facts (dates, names, numbers)
 3. Choose a tone
@@ -239,8 +240,7 @@ email-gen-assistant/
 │
 ├── docs/
 │   ├── 00-architecture.md    # System architecture reference
-│   ├── plan-of-action.md     # Full implementation plan
-│   └── phase-*.md            # Per-phase implementation notes
+│   └── plan-of-action.md            # Full implementation plan
 │
 └── tests/
     ├── test_generator.py     # Generator graph unit tests
@@ -282,11 +282,11 @@ The three metric nodes run **in parallel** (LangGraph fan-out), each returning o
 
 ## Evaluation Metrics
 
-| # | Metric              | Method                                                                                                                                | Range |
-|---|---------------------|---------------------------------------------------------------------------------------------------------------------------------------|-------|
-| 1 | **Fact Coverage**   | `sentence-transformers` cosine similarity between each fact and the generated email body; average over all facts                      | 0–1   |
-| 2 | **Tone Alignment**  | LLM-as-Judge: the configured model scores the generated email against the requested tone label on a 0–10 scale, normalised to 0–1     | 0–1   |
-| 3 | **Writing Quality** | 50% grammar score (LanguageTool error density) + 50% structural score (regex checks for greeting, sign-off, paragraph count)          | 0–1   |
+| #   | Metric              | Method                                                                                                                            | Range |
+| --- | ------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ----- |
+| 1   | **Fact Coverage**   | `sentence-transformers` cosine similarity between each fact and the generated email body; average over all facts                  | 0–1   |
+| 2   | **Tone Alignment**  | LLM-as-Judge: the configured model scores the generated email against the requested tone label on a 0–10 scale, normalised to 0–1 | 0–1   |
+| 3   | **Writing Quality** | 50% grammar score (LanguageTool error density) + 50% structural score (regex checks for greeting, sign-off, paragraph count)      | 0–1   |
 
 **Composite score** = arithmetic mean of the three metrics.
 
@@ -294,18 +294,18 @@ The three metric nodes run **in parallel** (LangGraph fan-out), each returning o
 
 ## Environment Variables
 
-| Variable                  | Required | Description                                                              |
-|---------------------------|----------|--------------------------------------------------------------------------|
-| `OPENROUTER_API_KEY`      | **Yes**  | Your OpenRouter API key — get one at https://openrouter.ai/keys          |
-| `BASE_URL`                | No       | Defaults to `https://openrouter.ai/api/v1`                               |
-| `LLM_MODEL`               | No       | Default model for generation (fallback: `openai/gpt-4o-mini`)            |
-| `MODEL_A`                 | No       | Used by `run_eval.py` default when `--model` is not specified             |
-| `MODEL_B`                 | No       | Convenience variable for the second model in A/B runs                    |
-| `EVAL_DELAY_SECONDS`      | No       | Inter-scenario delay in seconds (default: 5)                             |
-| `CHAINLIT_AUTH_SECRET`    | **Yes*** | JWT signing secret — generate with `uv run chainlit create-secret`       |
-| `CHAINLIT_DEFAULT_USER`   | No       | Login username for the chat UI (default: `admin`)                        |
-| `CHAINLIT_DEFAULT_PASSWORD` | No     | Login password for the chat UI (default: `admin`)                        |
-| `DATABASE_URL`            | No       | SQLite URL for chat history (default: `sqlite+aiosqlite:///chat_history.db`) |
+| Variable                    | Required  | Description                                                                  |
+| --------------------------- | --------- | ---------------------------------------------------------------------------- |
+| `OPENROUTER_API_KEY`        | **Yes**   | Your OpenRouter API key — get one at <https://openrouter.ai/keys>              |
+| `BASE_URL`                  | No        | Defaults to `https://openrouter.ai/api/v1`                                   |
+| `LLM_MODEL`                 | No        | Default model for generation (fallback: `openai/gpt-4o-mini`)                |
+| `MODEL_A`                   | No        | Used by `run_eval.py` default when `--model` is not specified                |
+| `MODEL_B`                   | No        | Convenience variable for the second model in A/B runs                        |
+| `EVAL_DELAY_SECONDS`        | No        | Inter-scenario delay in seconds (default: 5)                                 |
+| `CHAINLIT_AUTH_SECRET`      | **Yes\*** | JWT signing secret — generate with `uv run chainlit create-secret`           |
+| `CHAINLIT_DEFAULT_USER`     | No        | Login username for the chat UI (default: `admin`)                            |
+| `CHAINLIT_DEFAULT_PASSWORD` | No        | Login password for the chat UI (default: `admin`)                            |
+| `DATABASE_URL`              | No        | SQLite URL for chat history (default: `sqlite+aiosqlite:///chat_history.db`) |
 
 \* Required only when running the Chainlit chat UI (`app.py`).
 
@@ -330,12 +330,12 @@ llm = ChatOpenAI(
 
 ## Evaluation Results (April 2026)
 
-| Metric            | `elephant-alpha` | `nemotron-3-super` | Delta   |
-|-------------------|------------------|--------------------|---------|
-| Fact Coverage     | 0.904            | 0.895              | +0.009  |
-| Tone Alignment    | 0.710            | 0.690              | +0.020  |
-| Writing Quality   | 0.762            | 0.756              | +0.006  |
-| **Composite**     | **0.792**        | **0.780**          | +0.012  |
+| Metric          | `elephant-alpha` | `nemotron-3-super` | Delta  |
+| --------------- | ---------------- | ------------------ | ------ |
+| Fact Coverage   | 0.904            | 0.895              | +0.009 |
+| Tone Alignment  | 0.710            | 0.690              | +0.020 |
+| Writing Quality | 0.762            | 0.756              | +0.006 |
+| **Composite**   | **0.792**        | **0.780**          | +0.012 |
 
 See [`report/analysis.md`](report/analysis.md) for the full comparative analysis, failure mode breakdown, and production recommendation.
 
@@ -345,10 +345,10 @@ See [`report/analysis.md`](report/analysis.md) for the full comparative analysis
 
 This project was built as an applied AI engineering assessment. Here is where each required deliverable lives:
 
-| Deliverable | Location in this repo |
-|---|---|
-| **Code Repository** | This repo — [github.com/Now-Tiger/email-gen-assistant](https://github.com/Now-Tiger/email-gen-assistant) |
-| **Prompt Template** | [`src/prompts.py`](src/prompts.py) — `SYSTEM_PROMPT`, `USER_TEMPLATE`, `TONE_JUDGE_PROMPT` |
-| **3 Custom Metric Definitions & Logic** | [`src/evaluator/metrics.py`](src/evaluator/metrics.py) + [`report/analysis.md`](report/analysis.md) §Metric Reliability |
-| **Raw Evaluation Data (CSV)** | [`data/results/model_a.csv`](data/results/model_a.csv), [`data/results/model_b.csv`](data/results/model_b.csv) |
-| **Comparative Analysis Summary** | [`report/analysis.md`](report/analysis.md) — full breakdown with per-scenario scores, failure modes, and production recommendation |
+| Deliverable                             | Location in this repo                                                                                                              |
+| --------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| **Code Repository**                     | This repo — [github.com/Now-Tiger/email-gen-assistant](https://github.com/Now-Tiger/email-gen-assistant)                           |
+| **Prompt Template**                     | [`src/prompts.py`](src/prompts.py) — `SYSTEM_PROMPT`, `USER_TEMPLATE`, `TONE_JUDGE_PROMPT`                                         |
+| **3 Custom Metric Definitions & Logic** | [`src/evaluator/metrics.py`](src/evaluator/metrics.py) + [`report/analysis.md`](report/analysis.md) §Metric Reliability            |
+| **Raw Evaluation Data (CSV)**           | [`data/results/model_a.csv`](data/results/model_a.csv), [`data/results/model_b.csv`](data/results/model_b.csv)                     |
+| **Comparative Analysis Summary**        | [`report/analysis.md`](report/analysis.md) — full breakdown with per-scenario scores, failure modes, and production recommendation |

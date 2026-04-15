@@ -1,0 +1,31 @@
+[project]
+name = "email-gen-assistant"
+version = "0.1.0"
+description = "AI email generation assistant with LangGraph, OpenRouter, and custom evaluation metrics"
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+dependencies = [
+  "aiosqlite>=0.22.1",
+  "chainlit>=2.11.0",
+  "langchain>=1.2.15",
+  "langchain-openai>=1.1.13",
+  "langgraph>=1.1.6",
+  "language-tool-python>=3.3.0",
+  "numpy<2.0",
+  "openai>=2.31.0",
+  "pandas>=3.0.2",
+  "pydantic>=2.13.1",
+  "python-dotenv>=1.2.2",
+  "sentence-transformers>=3.0,<4.0",
+  "sqlalchemy>=2.0.49",
+]
+
+[tool.uv]
+required-environments = [
+  "sys_platform == 'darwin' and platform_machine == 'x86_64'",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
+]

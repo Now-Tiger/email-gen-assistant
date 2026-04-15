@@ -1,0 +1,132 @@
+[
+  {
+    "id": 1,
+    "intent": "Follow up after a job interview",
+    "facts": [
+      "Interview was held on Monday 14 April at 10am",
+      "Role is Senior ML Engineer on the Recommendations team",
+      "Interviewer was Sarah Chen, Engineering Director",
+      "Discussed experience with PyTorch and recommendation systems"
+    ],
+    "tone": "Formal, grateful",
+    "domain": "HR / Career",
+    "human_reference": "Subject: Thank You — Senior ML Engineer Interview, 14 April\n\nDear Sarah,\n\nThank you for taking the time to speak with me on Monday morning about the Senior ML Engineer position on the Recommendations team.\n\nI came away genuinely energised by our conversation about recommendation systems and the technical challenges your team is working through. The discussion around PyTorch and large-scale inference solidified my enthusiasm for the role.\n\nI believe my experience aligns closely with what the team needs, and I look forward to hearing about the next steps in the process.\n\nWarm regards,\n[Your Name]"
+  },
+  {
+    "id": 2,
+    "intent": "Request a project deadline extension",
+    "facts": [
+      "Original deadline is 18 April",
+      "Requesting a 5-day extension to 23 April",
+      "Delay caused by unexpected third-party API downtime (Stripe outage, 11-12 April)",
+      "Core feature is 85% complete; only integration testing remains"
+    ],
+    "tone": "Apologetic, professional",
+    "domain": "Internal / Engineering",
+    "human_reference": "Subject: Deadline Extension Request — Payment Integration Module (18 → 23 April)\n\nHi [Manager's Name],\n\nI am writing to request a 5-day extension on the payment integration module deadline, moving it from 18 April to 23 April.\n\nThe primary cause of the delay was the Stripe API outage on 11–12 April, which blocked our integration testing environment for approximately 36 hours. The core feature itself is 85% complete; the remaining work is confined to integration testing and final QA.\n\nI take ownership of not flagging this earlier and have re-planned the remaining tasks to ensure the 23 April date is firm.\n\nPlease let me know if you have concerns or need a more detailed breakdown.\n\nBest,\n[Your Name]"
+  },
+  {
+    "id": 3,
+    "intent": "Pitch a product to a new potential client",
+    "facts": [
+      "Product is an AI-powered document review tool called DocAI",
+      "Reduces legal document review time by 60%",
+      "Already used by 3 Am Law 100 firms",
+      "Offering a free 2-week pilot with no contract required"
+    ],
+    "tone": "Persuasive, confident",
+    "domain": "Sales",
+    "human_reference": "Subject: Cut Your Document Review Time by 60% — DocAI Pilot Offer\n\nDear [Name],\n\nI am reaching out because DocAI is already helping three Am Law 100 firms reduce legal document review time by 60%, and I believe your team would see similar results.\n\nDocAI uses purpose-built AI to surface relevant clauses, flag anomalies, and prioritise review queues — all without changing your existing workflow. The firms using it today report meaningful reductions in both cost and turnaround time.\n\nTo demonstrate the value first-hand, I would like to offer you a free 2-week pilot, no contract required. You get full access to evaluate results against your actual workload.\n\nWould a 20-minute call this week work to get the pilot started?\n\nBest regards,\n[Your Name]"
+  },
+  {
+    "id": 4,
+    "intent": "Decline a meeting invitation politely",
+    "facts": [
+      "Meeting is a 2-hour workshop on 20 April",
+      "Unable to attend due to a prior client commitment",
+      "Interested in the topic (AI governance frameworks)",
+      "Requesting to receive the notes or recording afterwards"
+    ],
+    "tone": "Warm, casual",
+    "domain": "Networking",
+    "human_reference": "Subject: Re: AI Governance Workshop — 20 April\n\nHi [Name],\n\nThank you so much for including me — AI governance frameworks is exactly the kind of topic I have been wanting to dig into more, so I am genuinely sorry to be missing this one.\n\nI have a client commitment that unfortunately overlaps with the full 2-hour window on the 20th and cannot be moved. I hope it is a great session.\n\nIf there are any notes, slides, or a recording afterwards, I would really appreciate being sent them.\n\nHope to catch you at the next one!\n\n[Your Name]"
+  },
+  {
+    "id": 5,
+    "intent": "Escalate a critical production bug to engineering leadership",
+    "facts": [
+      "Bug causes data corruption in user export files when exports exceed 10,000 rows",
+      "Reported by 4 enterprise customers since 13 April",
+      "Root cause identified: off-by-one error in pagination logic in ExportService",
+      "Patch is ready for review; requires senior engineer sign-off before deploy"
+    ],
+    "tone": "Urgent, technical",
+    "domain": "Engineering",
+    "human_reference": "Subject: [URGENT] Data Corruption in Large Exports — Patch Ready for Sign-Off\n\nHi [Name],\n\nI need to escalate an active bug affecting enterprise customers that requires your sign-off to resolve.\n\nThe issue: exports larger than 10,000 rows are producing corrupted output files. Four enterprise customers have reported this since 13 April. Root cause has been identified as an off-by-one error in the pagination logic within ExportService.\n\nA patch is written and has passed local testing. It is sitting in the review queue pending senior engineer sign-off before we can deploy.\n\nGiven the customer impact, I am requesting prioritised review today. I can walk you through the change in 15 minutes if that helps.\n\nPlease let me know your availability.\n\n[Your Name]"
+  },
+  {
+    "id": 6,
+    "intent": "Thank a mentor for career advice that led to a successful outcome",
+    "facts": [
+      "Mentor advised switching from backend to ML engineering 18 months ago",
+      "Just received and accepted a Senior ML Engineer offer at a top AI lab",
+      "The role pays 40% more than current position",
+      "First meeting with the mentor was over coffee in October 2024"
+    ],
+    "tone": "Personal, sincere",
+    "domain": "Career",
+    "human_reference": "Subject: I Got the Offer — Thank You\n\nDear [Mentor's Name],\n\nI wanted you to be one of the first people I told: I just accepted a Senior ML Engineer offer at a top AI lab, and it pays 40% more than my current role.\n\nI keep thinking back to that coffee in October 2024, when you encouraged me to make the switch from backend to ML engineering. At the time, it felt like a big leap. Eighteen months later, it has changed the trajectory of my career.\n\nI genuinely do not know if I would have taken that step without your push. Thank you — not just for the advice, but for believing I could do it.\n\nI hope we can catch up soon. Coffee is on me this time.\n\nWith gratitude,\n[Your Name]"
+  },
+  {
+    "id": 7,
+    "intent": "Request a vendor quote for cloud infrastructure services",
+    "facts": [
+      "Need a quote for managed Kubernetes hosting for 3 environments (dev, staging, prod)",
+      "Expected monthly workload: ~500 GPU-hours",
+      "Compliance requirement: SOC 2 Type II certified",
+      "Decision deadline is 30 April"
+    ],
+    "tone": "Formal, concise",
+    "domain": "Procurement",
+    "human_reference": "Subject: Quote Request — Managed Kubernetes Hosting (SOC 2, ~500 GPU-hours/month)\n\nDear [Vendor Name] Sales Team,\n\nWe are evaluating managed Kubernetes hosting providers and would like to request a formal quote for the following scope:\n\n- Three environments: development, staging, and production\n- Estimated workload: approximately 500 GPU-hours per month\n- Compliance requirement: SOC 2 Type II certification mandatory\n\nWe have a decision deadline of 30 April and would appreciate receiving your quote by 25 April to allow adequate review time.\n\nPlease include pricing tiers, SLA terms, and any relevant case studies for similar workloads.\n\nThank you,\n[Your Name]\n[Title], [Company]"
+  },
+  {
+    "id": 8,
+    "intent": "Announce a new remote work policy to the team",
+    "facts": [
+      "New policy: 3 days in-office required per week starting 1 May",
+      "Previously the policy was fully remote",
+      "Tuesdays and Thursdays are mandatory in-office days; third day is flexible",
+      "Policy driven by leadership decision to improve collaboration"
+    ],
+    "tone": "Neutral, clear",
+    "domain": "HR / Internal",
+    "human_reference": "Subject: Updated Remote Work Policy — Effective 1 May\n\nHi Team,\n\nI am writing to share an update to our remote work policy that takes effect on 1 May.\n\nStarting that date, all team members will be required to work from the office at least 3 days per week. Tuesdays and Thursdays are designated mandatory in-office days; the third day each week is flexible and can be chosen based on your schedule.\n\nThis change has been made at the leadership level to strengthen day-to-day collaboration across teams. I understand this is a meaningful shift from our current fully remote setup and appreciate that it may require adjustments to your routines.\n\nIf you have questions or concerns, please feel free to reach out directly.\n\nThanks,\n[Your Name]"
+  },
+  {
+    "id": 9,
+    "intent": "Follow up on an overdue invoice",
+    "facts": [
+      "Invoice number: INV-2024-0892",
+      "Original due date: 31 March",
+      "Amount outstanding: $12,400",
+      "Two prior reminders sent (7 April and 11 April)"
+    ],
+    "tone": "Firm, professional",
+    "domain": "Finance",
+    "human_reference": "Subject: Overdue Invoice INV-2024-0892 — $12,400 Outstanding\n\nDear [Name],\n\nI am following up regarding Invoice INV-2024-0892 for $12,400, which was due on 31 March and remains unpaid.\n\nThis is our third outreach on this matter, following reminders sent on 7 April and 11 April. To date, we have not received payment or a response regarding the delay.\n\nWe would appreciate prompt payment or, if there is an issue with the invoice, a response by end of day Friday so we can resolve it quickly.\n\nPlease do not hesitate to contact me directly if there is anything blocking payment.\n\nRegards,\n[Your Name]\n[Title], [Company]"
+  },
+  {
+    "id": 10,
+    "intent": "Propose a strategic partnership to another company",
+    "facts": [
+      "Our company builds AI-powered supply chain optimisation tools",
+      "Their company is a leading logistics platform with 800+ enterprise clients",
+      "Proposed collaboration: integrate our AI layer into their platform",
+      "Initial step: a joint 90-day pilot with 2-3 shared clients"
+    ],
+    "tone": "Enthusiastic, strategic",
+    "domain": "Business Development",
+    "human_reference": "Subject: Partnership Proposal — AI Supply Chain Layer × [Their Company]\n\nDear [Name],\n\nI am reaching out because I believe there is a compelling opportunity for our two companies to create something genuinely valuable together.\n\nOur platform specialises in AI-powered supply chain optimisation. Your platform is trusted by 800+ enterprise clients for logistics management. The natural next step is to bring these two capabilities together: integrating our AI optimisation layer directly into your platform, giving your clients a measurable edge on cost and delivery performance.\n\nTo prove the value quickly and with minimal risk, I am proposing a 90-day joint pilot with 2–3 clients we have in common. This lets both sides validate the integration and business case before any larger commitment.\n\nWould you be open to a 30-minute call in the next two weeks to explore this further?\n\nLooking forward to connecting,\n[Your Name]"
+  }
+]

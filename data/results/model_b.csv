@@ -1,0 +1,108 @@
+scenario_id,model,model_used,domain,intent,tone,generated_subject,generated_body,metric_fact_coverage,metric_tone_alignment,metric_writing_quality,composite_score,tone_alignment_reason,error
+1,nvidia/nemotron-3-super-120b-a12b:free,nvidia/nemotron-3-super-120b-a12b:free,HR / Career,Follow up after a job interview,"Formal, grateful",Thank You for the Interview – Senior ML Engineer Role,"Dear Sarah Chen,
+
+Thank you for taking the time to meet with me on Monday, 14 April at 10 am to discuss the Senior ML Engineer position on the Recommendations team. I appreciated learning more about the team’s vision and sharing my experience with PyTorch and building recommendation systems.
+
+I remain enthusiastic about the opportunity to contribute to [Company Name]’s recommendation efforts and am happy to provide any additional information you may need. Please let me know the expected timeline for next steps.
+
+Thank you again for your consideration.
+
+Best regards,
+[Your Name]",0.8764,0.9,0.8212,0.8659,"The email uses formal, grateful language with professional vocabulary and a respectful tone, though it could slightly expand sentence structure to enhance formality.",
+2,nvidia/nemotron-3-super-120b-a12b:free,nvidia/nemotron-3-super-120b-a12b:free,Internal / Engineering,Request a project deadline extension,"Apologetic, professional",Request for Extension of Project Deadline to 23 April,"Dear [Recipient Name],
+
+I am writing to apologize for the delay and to formally request a five‑day extension of the current deadline from 18 April to 23 April. The delay stems from an unexpected Stripe API outage on 11‑12 April, which halted our integration testing; the core feature is now 85 % complete, with only the remaining integration work pending.
+
+Please let me know if the proposed new deadline is acceptable, or if you would like to discuss alternative arrangements.
+
+Thank you for your understanding.
+
+Best regards,
+[Your Name]",0.9294,0.0,0.875,0.6015,Parse error: Expecting value: line 1 column 1 (char 0),
+3,nvidia/nemotron-3-super-120b-a12b:free,nvidia/nemotron-3-super-120b-a12b:free,Sales,Pitch a product to a new potential client,"Persuasive, confident",Transform Your Legal Review Process with DocAI — Free 2-Week Pilot Available,"Dear [Name],
+
+I am reaching out because DocAI, our AI-powered document review tool, is already trusted by three Am Law 100 firms to cut review time by 60%.  
+We are offering your team a no‑contract, two‑week pilot so you can experience those savings firsthand.  
+Please let me know a convenient time for a 15‑minute call this week to get the pilot started.  
+
+Best regards,  
+[Your Name]",0.9315,0.7,0.7235,0.785,"Strong social proof and a clear call to action convey confidence, but the language is somewhat restrained and lacks more forceful persuasive vocabulary or assertive phrasing.",
+4,nvidia/nemotron-3-super-120b-a12b:free,nvidia/nemotron-3-super-120b-a12b:free,Networking,Decline a meeting invitation politely,"Warm, casual",Thanks for the invite – can't make the workshop but would love the notes,"Hi [Name],
+
+Thanks so much for inviting me to the 2‑hour AI governance workshop on 20 April – it sounds really interesting and I’m keen to learn more. Unfortunately I’ve got a prior client commitment that I can’t move, so I won’t be able to join.
+
+If possible, could you share the meeting notes or a recording afterwards? I’d really appreciate staying in the loop.
+
+Thanks again, and hope the session goes great!
+
+Best,
+[Your Name]",0.8697,0.9,0.6776,0.8158,"The email uses warm, casual language and a friendly emotional register, with only minor formality in the closing slightly holding back the overall relaxed feel.",
+5,nvidia/nemotron-3-super-120b-a12b:free,nvidia/nemotron-3-super-120b-a12b:free,Engineering,Escalate a critical production bug to engineering leadership,"Urgent, technical",[URGENT] Critical Data Corruption Bug in Export Service – Senior Engineer Sign‑Off Required,"Hi [Leadership Name],
+
+A critical bug in ExportService causes data corruption in user export files when the export exceeds 10,000 rows. Since 13 April, four enterprise customers have reported corrupted exports, impacting downstream analytics and compliance workflows.
+
+Root cause analysis identified an off‑by‑one error in the pagination logic that truncates the final row and writes invalid data. A patch correcting the logic has been prepared and is awaiting senior engineer review for sign‑off before deployment.
+
+Please review the attached patch and provide your approval by end of day today so we can push the fix to production and prevent further corruption. I will monitor the review status and notify you once the patch is merged.
+
+[Your Name]",0.8936,0.8,0.6645,0.786,"Strong technical vocabulary and urgent deadline, but slightly softened by polite phrasing and a collaborative tone that tempers the urgency.",
+6,nvidia/nemotron-3-super-120b-a12b:free,nvidia/nemotron-3-super-120b-a12b:free,Career,Thank a mentor for career advice that led to a successful outcome,"Personal, sincere",Thank You for Your Guidance and Support,"Hi [Mentor’s First Name],
+
+I hope you’re doing well. I wanted to reach out and thank you for the advice you gave me over coffee in October 2024, when you suggested I shift from backend to ML engineering. Following that conversation, I made the switch 18 months ago, and I’ve just received and accepted a Senior ML Engineer offer at a top AI lab—a role that pays 40% more than my current position.
+
+Your insight played a pivotal role in getting me here, and I’m truly grateful for your support and belief in me. I’d love to treat you to coffee soon to celebrate and catch up properly—please let me know what works for your schedule.
+
+Thanks again for everything.
+
+Warm regards,  
+[Your Name]",0.8621,0.9,0.8347,0.8656,"Warm, grateful language and a personal coffee invitation create a sincere tone, though the specific financial detail slightly tempers intimacy.",
+7,nvidia/nemotron-3-super-120b-a12b:free,nvidia/nemotron-3-super-120b-a12b:free,Procurement,Request a vendor quote for cloud infrastructure services,"Formal, concise",Request for Quote – Managed Kubernetes Hosting (Dev/Staging/Prod) – Decision by 30 April,"Dear [Vendor Name] Team,
+
+I am requesting a formal quote for managed Kubernetes hosting across three environments (development, staging, production) with an estimated monthly workload of approximately 500 GPU‑hours. The solution must be SOC 2 Type II certified. Please include pricing, service‑level agreements, and any applicable setup or support fees.
+
+We require the quote no later than 30 April to support our procurement timeline. Let me know if you need additional details to prepare the proposal.
+
+Thank you for your prompt attention.
+
+Best regards,
+[Your Name]
+[Your Title]
+[Your Company]",0.7409,0.0,0.875,0.5386,Parse error: Expecting value: line 1 column 1 (char 0),
+8,nvidia/nemotron-3-super-120b-a12b:free,nvidia/nemotron-3-super-120b-a12b:free,HR / Internal,Announce a new remote work policy to the team,"Neutral, clear",Update to Remote Work Policy Effective 1 May,"Hi Team,
+
+I am writing to inform you of an update to our remote work policy, effective 1 May.
+
+Starting that date, the requirement will be three days in the office per week, with Tuesdays and Thursdays designated as mandatory in‑office days. The third in‑office day can be chosen flexibly by each employee based on team needs and personal schedule.
+
+This change reflects a leadership decision aimed at improving collaboration and spontaneous interaction across teams.
+
+Please review the policy details attached and let me know if you have any questions. Your adherence to the new schedule beginning 1 May is appreciated.
+
+Best regards,  
+[Your Name]",0.9688,0.9,0.8274,0.8987,"The email uses clear, neutral vocabulary and a balanced formal-but-accessible tone, with straightforward sentences that convey the policy update professionally and without emotional bias.",
+9,nvidia/nemotron-3-super-120b-a12b:free,nvidia/nemotron-3-super-120b-a12b:free,Finance,Follow up on an overdue invoice,"Firm, professional",Second Follow-Up: Invoice INV-2024-0892 Overdue – Immediate Payment Required,"Dear [Name],
+
+This is a second follow‑up regarding invoice INV-2024-0892, which was due on 31 March and remains unpaid in the amount of $12,400. Despite reminders sent on 7 April and 11 April, we have not yet received payment or a confirmation of when it will be settled.
+
+Please arrange for the full outstanding amount to be transferred today, or reply by end of business tomorrow with a confirmed payment date and any required documentation. Failure to resolve this promptly may result in further action per our credit terms.
+
+Regards,  
+[Your Name]  
+[Your Position]  
+[Your Company]  
+[Contact Information]",0.8888,0.9,0.6709,0.8199,"The email uses firm, professional vocabulary and a formal structure with clear deadlines, though a slightly more direct imperative could make it marginally firmer.",
+10,nvidia/nemotron-3-super-120b-a12b:free,nvidia/nemotron-3-super-120b-a12b:free,Business Development,Propose a strategic partnership to another company,"Enthusiastic, strategic",Exciting Opportunity to Power Your Logistics Platform with AI — Proposing a 90‑Day Joint Pilot,"Hi [Name],
+
+I’ve been following [Their Company]’s impressive growth as a leading logistics platform serving 800+ enterprise clients, and I’m excited about the potential to combine our AI‑powered supply‑chain optimisation tools with your network.
+
+Our proposal is to integrate our AI layer directly into your platform, beginning with a joint 90‑day pilot involving 2‑3 of our shared clients. This pilot will let us demonstrate measurable improvements in routing efficiency and inventory turnover while minimizing integration effort for your team.
+
+Could we schedule a 30‑minute call next week to outline the pilot scope, timeline, and success metrics? I’m confident this collaboration will unlock new value for both of our customers.
+
+Looking forward to your thoughts,
+
+[Your Name]  
+[Your Title]  
+[Our Company]  
+[Phone] | [Email]",0.9935,0.9,0.5874,0.827,"The email uses energetic, strategic vocabulary and a confident yet collaborative structure, conveying enthusiasm and long‑term value focus with only minor room for heightened informality.",
+AVERAGE,nvidia/nemotron-3-super-120b-a12b:free,,,,,,,0.8955,0.69,0.7557,0.7804,,

@@ -1,0 +1,76 @@
+scenario_id,model,model_used,domain,intent,tone,generated_subject,generated_body,metric_fact_coverage,metric_tone_alignment,metric_writing_quality,composite_score,tone_alignment_reason,error
+1,openrouter/elephant-alpha,openrouter/elephant-alpha,HR / Career,Follow up after a job interview,"Formal, grateful",Follow-Up on Senior ML Engineer Interview — 14 April,"Dear Sarah,
+
+Thank you for the time you took to meet with me on Monday, 14 April at 10:00 a.m. to discuss the Senior ML Engineer role on the Recommendations team. I appreciated our conversation about my experience with PyTorch and recommendation systems, as well as the insights you shared into the team’s objectives.
+
+Could you please provide an update on the expected timeline for the hiring decision? I remain very enthusiastic about the opportunity to contribute in this role and am happy to provide any further information if needed.
+
+Best regards,
+[Your Name]",0.9148,0.9,0.8218,0.8789,"The email uses formal, polite vocabulary and a measured sentence structure, conveying gratitude and professionalism with a slightly warmer yet still appropriate emotional register.",
+2,openrouter/elephant-alpha,openrouter/elephant-alpha,Internal / Engineering,Request a project deadline extension,"Apologetic, professional",Request for 5-Day Extension to 23 April,"I apologize for the request, but the integration testing for the project is impacted by circumstances beyond our control.
+
+The original deadline of 18 April was affected by unexpected third-party API downtime (Stripe outage, 11–12 April), and the core feature is now 85% complete with only integration testing remaining. I respectfully request a 5-day extension to 23 April to ensure thorough validation and a stable delivery.",1.0,0.9,0.5,0.8,"The email uses professional vocabulary and a respectful structure to deliver an apology, though a slightly more deferential opening would perfect the tone.",
+3,openrouter/elephant-alpha,openrouter/elephant-alpha,Sales,Pitch a product to a new potential client,"Persuasive, confident",Accelerate Your Document Review with DocAI,"Hi [Name],
+
+DocAI, our AI-powered document review tool, reduces legal document review time by 60% and is already trusted by 3 Am Law 100 firms. I am confident this solution will immediately strengthen your team’s speed and accuracy.
+
+Start your free 2-week pilot with no contract required—let’s get you up and running this week.",0.9186,0.9,0.5324,0.7837,"Strong persuasive and confident elements with assertive claims and a clear call to action, though slight informality in the greeting tempers the tone.",
+4,openrouter/elephant-alpha,openrouter/elephant-alpha,Networking,Decline a meeting invitation politely,"Warm, casual",Can’t make the workshop on 20 April,"Hi [Name],
+
+Thanks so much for thinking of me for the 2-hour AI governance workshop on 20 April — I’m genuinely interested in the topic. Unfortunately, I have a prior client commitment that day and won’t be able to attend.
+
+No worries at all — could you please share the notes or a recording with me afterward so I can catch up?
+
+Thanks again, and talk soon!
+[Your Name]",0.8635,0.0,0.875,0.5795,"LLM error: Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'openrouter/elephant-alpha is temporarily rate-limited upstream. Please retry shortly.', 'provider_name': 'Stealth', 'is_byok': False}}, 'user_id': 'user_397zn8zVqWrN0lKdJ4YB5mVrH2Q'}",
+5,openrouter/elephant-alpha,openrouter/elephant-alpha,Engineering,Escalate a critical production bug to engineering leadership,"Urgent, technical",[URGENT] Critical Production Bug — Data Corruption in Large Exports (Action Required),"Hi team,
+
+We are escalating a critical production bug: ExportService suffers an off-by-one error in pagination logic when exports exceed 10,000 rows, causing data corruption; since 13 April, this has impacted 4 enterprise customers. The patch is ready for review and requires senior engineer sign-off before deployment.
+
+Please review and approve the patch today so we can proceed immediately.
+
+Best regards,
+[Your Name]",0.8325,0.8,0.7956,0.8094,"Strong technical vocabulary and urgent call to action, but slightly softened by 'Hi team' and 'Best regards' which reduce formality and emotional intensity.",
+6,openrouter/elephant-alpha,openrouter/elephant-alpha,Career,Thank a mentor for career advice that led to a successful outcome,"Personal, sincere",Thank you for your guidance,"Hi [Name],
+
+Thank you for the career advice you shared over coffee in October 2024; your suggestion to switch from backend to ML engineering 18 months ago has been a turning point for me.
+
+I’m thrilled to share that I recently accepted a Senior ML Engineer offer at a top AI lab with a 40% increase over my current role, and I wanted to confirm how instrumental your guidance was in getting me here.
+
+I’m very grateful for your support and would love to stay in touch.
+
+Warm regards,  
+[Your Name]",0.8118,0.9,0.8201,0.844,"The vocabulary is warm and personal, the emotional register is sincerely grateful, and the overall feel is intimate, though the specific career detail slightly elevates formality.",
+7,openrouter/elephant-alpha,openrouter/elephant-alpha,Procurement,Request a vendor quote for cloud infrastructure services,"Formal, concise",Request for Quote — Managed Kubernetes Hosting,"Dear [Vendor Contact],
+
+We request a formal quote for managed Kubernetes hosting across three environments (dev, staging, prod), with an expected monthly workload of ~500 GPU-hours, and requiring SOC 2 Type II certification.
+
+Please provide the quote by 30 April to support our procurement timeline.
+
+Best regards,  
+[Your Name]",0.7554,0.0,0.773,0.5095,"LLM error: Error code: 429 - {'error': {'message': 'Provider returned error', 'code': 429, 'metadata': {'raw': 'openrouter/elephant-alpha is temporarily rate-limited upstream. Please retry shortly.', 'provider_name': 'Stealth', 'is_byok': False}}, 'user_id': 'user_397zn8zVqWrN0lKdJ4YB5mVrH2Q'}",
+8,openrouter/elephant-alpha,openrouter/elephant-alpha,HR / Internal,Announce a new remote work policy to the team,"Neutral, clear",New Remote Work Policy Effective 1 May,"Team,
+
+We are updating our remote work policy to require three days in the office per week, beginning 1 May. Previously, the policy was fully remote; starting 1 May, Tuesdays and Thursdays are mandatory in-office days, with a third day to be determined by each team in alignment with leadership’s decision to improve collaboration.
+
+Please review your schedules and confirm your in-office days with your manager by 26 April.
+
+Thank you,
+[Your Name]",0.9569,0.9,0.75,0.869,"The email uses clear, neutral vocabulary and a straightforward structure, maintaining a professional and factual tone with minimal emotional register.",
+9,openrouter/elephant-alpha,openrouter/elephant-alpha,Finance,Follow up on an overdue invoice,"Firm, professional",Payment Reminder — Invoice INV-2024-0892 Overdue,"Dear [Name],
+
+This is a formal reminder that invoice INV-2024-0892, originally due 31 March, remains outstanding with a balance of $12,400. We have already sent reminders on 7 April and 11 April.
+
+Please process the full payment immediately and confirm once completed. If you require any clarification, contact me directly to resolve this without further delay.
+
+Regards,
+[Your Name]",0.9934,0.9,0.875,0.9228,"The email uses strong, professional vocabulary and a concise structure to convey urgency and authority, with only minor room for increased directness.",
+10,openrouter/elephant-alpha,openrouter/elephant-alpha,Business Development,Propose a strategic partnership to another company,"Enthusiastic, strategic",Proposal for a Strategic Partnership to Co-Deliver AI-Driven Supply Chain Optimization,"Hi [Name],
+
+I am excited to explore a strategic partnership between our organizations, combining our AI-powered supply chain optimization tools with your leading logistics platform to serve your 800+ enterprise clients. By integrating our AI layer into your platform, we can unlock measurable efficiency gains and differentiated value for your shared customers.
+
+I propose we launch a joint 90-day pilot with 2–3 shared clients to validate performance and refine the experience, and I would welcome the opportunity to align on scope and timelines at your convenience.
+
+Best regards,
+[Your Name]",0.9918,0.9,0.875,0.9223,"The email uses strategically charged vocabulary like 'strategic partnership' and 'measurable efficiency gains,' maintains a concise yet warm formality, and conveys enthusiastic confidence through forward-looking collaboration language.",
+AVERAGE,openrouter/elephant-alpha,,,,,,,0.9039,0.71,0.7618,0.7919,,

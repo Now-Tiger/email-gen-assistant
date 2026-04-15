@@ -1,0 +1,107 @@
+# =============================================================================
+# SECRETS & CREDENTIALS — never commit these
+# =============================================================================
+
+# Environment variable files (real secrets live here)
+.env
+.env.local
+.env.production
+.env.staging
+.env.*.local
+
+# Private keys / certificates
+*.pem
+*.key
+*.p12
+*.pfx
+
+# =============================================================================
+# DATABASE — contains user chat history and personal data
+# =============================================================================
+
+*.db
+*.sqlite
+*.sqlite3
+
+# =============================================================================
+# CHAINLIT RUNTIME — ignore everything except the app config
+# =============================================================================
+
+# Ignore all generated/runtime files inside .chainlit/ ...
+.chainlit/*
+# ... but keep config.toml so "confirm_new_chat = false" and other settings
+# are preserved for anyone who clones the repo.
+!.chainlit/config.toml
+
+# =============================================================================
+# PYTHON
+# =============================================================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Build / distribution
+dist/
+build/
+*.egg-info/
+*.egg
+.eggs/
+
+# =============================================================================
+# VIRTUAL ENVIRONMENTS
+# =============================================================================
+
+.venv/
+venv/
+env/
+ENV/
+
+# =============================================================================
+# TESTING & COVERAGE
+# =============================================================================
+
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# =============================================================================
+# CACHES
+# =============================================================================
+
+.cache/
+.llm_cache/
+*.log
+
+# =============================================================================
+# IDE & EDITOR
+# =============================================================================
+
+.vscode/
+.cursor/
+.idea/
+*.swp
+*.swo
+
+# =============================================================================
+# OS FILES
+# =============================================================================
+
+.DS_Store
+Thumbs.db
+
+# =============================================================================
+# PROJECT-SPECIFIC
+# =============================================================================
+
+# Test / scratch images that land in data/results during evaluation runs
+data/results/*.png
+data/results/*.jpg
+
+# uv.lock is intentionally committed for reproducible installs
+# (do NOT add uv.lock here)
+
+# docs
+docs/

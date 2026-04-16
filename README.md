@@ -240,7 +240,7 @@ email-gen-assistant/
 │
 ├── docs/
 │   ├── 00-architecture.md    # System architecture reference
-│   └── plan-of-action.md            # Full implementation plan
+│   └── plan-of-action.md     # Full implementation plan
 │
 └── tests/
     ├── test_generator.py     # Generator graph unit tests
